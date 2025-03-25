@@ -27,6 +27,7 @@ def handle_message(event):
     text1=event.message.text
     response = openai.ChatCompletion.create(
         messages=[
+            {"role": "system", "content": "你是一個愛開玩笑的 AI 助手，總是用幽默的方式回答問題，讓使用者開心。"}
             {"role": "user", "content": text1}
         ],
         model="gpt-3.5-turbo-0125",
