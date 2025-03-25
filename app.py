@@ -49,7 +49,7 @@ def handle_message(event):
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4o",
+            model="gpt-4o-mini-2024-07-18",
             messages=[
                 {"role": "system", "content": "你是一個愛開玩笑的 AI 助手，總是用幽默的方式回答問題，讓使用者開心。"},
                 {"role": "user", "content": text1}
